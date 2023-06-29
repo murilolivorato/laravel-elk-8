@@ -16,6 +16,111 @@ services:
   # due to the non-default profile it belongs to. To run it, either provide the
   # '--profile=setup' CLI flag to Compose commands, or "up" the service by name
   # such as 'docker compose up setup'.
+  server:
+    # image: 'nginx:stable-alpine'
+    build:
+      context: .
+      dockerfile: dockerfiles/nginx.dockerfile
+    ports:
+      - 8080:80
+      # - 443:443
+    volumes:
+      - ./src:/var/www/html
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - php
+      - redis
+      - mysql
+      - mailhog
+      - elasticsearch
+      - logstash
+      - kibana
+    container_name: elk_server
+    networks:
+      - elk_laravel
+    # extra_hosts:
+    #  - "host.docker.internal:host-gateway"
+
+  php:
+    build:
+      context: .
+      dockerfile: dockerfiles/php.dockerfile
+    volumes:
+      - ./src:/var/www/html:delegated
+    container_name: php
+    networks:
+      - elk_laravel
+
+  mysql:
+    image: mysql:8.0.1
+    restart: unless-stopped
+    tty: true
+    container_name: mysql
+    ports:
+      - 4306:3306
+    env_file:
+      - ./mysql/.env
+    networks:
+      - elk_laravel
+    volumes:
+      - /opt/mysql_data:/var/lib/mysql
+
+  redis:
+    image: redis:alpine
+    container_name: redis
+    restart: unless-stopped
+    ports:
+      - 6379:6379
+    networks:
+      - elk_laravel
+
+  composer:
+    build:
+      context: ./dockerfiles
+      dockerfile: composer.dockerfile
+    volumes:
+      - ./src:/var/www/html
+    depends_on:
+      - php
+    networks:
+      - elk_laravel
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin:latest
+    restart: always
+    container_name: phpmyadmin
+    depends_on:
+      - mysql
+    ports:
+      - '8890:80'
+    environment:
+      - PMA_HOST=mysql
+      - PMA_USER=root
+      - PMA_PASSWORD=secret
+    networks:
+      - elk_laravel
+
+  mailhog:
+    image: mailhog/mailhog:latest
+    container_name: mailhog
+    ports:
+      - 1025:1025
+      - 8025:8025
+    networks:
+      - elk_laravel
+
+  artisan:
+    build:
+      context: .
+      dockerfile: dockerfiles/php.dockerfile
+    volumes:
+      - ./src:/var/www/html
+    entrypoint: [ "php", "/var/www/html/artisan" ]
+    depends_on:
+      - mysql
+    networks:
+      - elk_laravel
+
   setup:
     profiles:
       - setup
@@ -38,7 +143,7 @@ services:
       MONITORING_INTERNAL_PASSWORD: ${MONITORING_INTERNAL_PASSWORD:-}
       BEATS_SYSTEM_PASSWORD: ${BEATS_SYSTEM_PASSWORD:-}
     networks:
-      - elk
+      - elk_laravel
     depends_on:
       - elasticsearch
 
@@ -64,7 +169,7 @@ services:
       # see: https://www.elastic.co/guide/en/elasticsearch/reference/current/bootstrap-checks.html
       discovery.type: single-node
     networks:
-      - elk
+      - elk_laravel
     restart: unless-stopped
 
   logstash:
@@ -84,7 +189,7 @@ services:
       LS_JAVA_OPTS: -Xms256m -Xmx256m
       LOGSTASH_INTERNAL_PASSWORD: ${LOGSTASH_INTERNAL_PASSWORD:-}
     networks:
-      - elk
+      - elk_laravel
     depends_on:
       - elasticsearch
     restart: unless-stopped
@@ -101,13 +206,13 @@ services:
     environment:
       KIBANA_SYSTEM_PASSWORD: ${KIBANA_SYSTEM_PASSWORD:-}
     networks:
-      - elk
+      - elk_laravel
     depends_on:
       - elasticsearch
     restart: unless-stopped
 
 networks:
-  elk:
+  elk_laravel:
     driver: bridge
 
 volumes:
