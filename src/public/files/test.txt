@@ -1,0 +1,45 @@
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T00:00:00+00:00","id":"6hWtxnYfrwjixlNg","channel":"online","product":{"id":"44805907","name":"Stanley 194749 Waterproof Toolbox","price":29.99,"brand":"Stanley","category":"Toolboxes"},"total":29.99,"customer":{"id":"BEsecBC1u5jQ65E5","name":"Scott Mcbride","age":51,"gender":"M","email":"scott.mcbride@gmail.com"}}
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T02:00:00+00:00","id":"nLGaGST6BUoSkM0r","channel":"online","product":{"id":"50628245","name":"Fischer Dubel SX 100 pcs","price":5.99,"brand":"Fischer","category":"Rawl Plugs"},"total":5.99,"customer":{"id":"qTu0rFP2P4LDTBXy","name":"Hector Daniels","age":51,"gender":"M","email":"hector.daniels@icloud.com"}}
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T03:00:00+00:00","id":"MQtYpLRqsWVyl3gJ","channel":"offline","product":{"id":"20326887","name":"John Deere X580 Lawn Tractor","price":7699.0,"brand":"John Deere","category":"Lawn Tractors"},"total":7699.0,"store":"Milano","salesman":{"id":"58892354","name":"Ashely Rawnsley"},"customer":{"id":"ND1MXArMGlLTDVBb","name":"Joshua Chapman","age":71,"gender":"M","email":"joshua.chapman@icloud.com"}}
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T06:00:00+00:00","id":"FZDKeiVrHSWZo25Z","channel":"online","product":{"id":"67763308","name":"STIHL MS170 Chainsaw","price":199.0,"brand":"STIHL","category":"Chainsaws"},"total":199.0,"customer":{"id":"lkgwyqSTw9XNjGAU","name":"Brian Nguyen","age":62,"gender":"M","email":"brian.nguyen@icloud.com"}}
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T06:30:00+00:00","id":"5AP3ofYhWILdYUO5","channel":"offline","product":{"id":"83955939","name":"CRAFTSMAN V60 3-in-1 Cordless Lawn Mower","price":402.79,"brand":"CRAFTSMAN","category":"Lawn Mowers"},"total":402.79,"store":"Copenhagen","salesman":{"id":"30371694","name":"Mirilla Penkman"},"customer":{"id":"LKawnfrUzkwDFOwN","name":"Joshua Fisher","age":61,"gender":"M","email":"joshua.fisher@yahoo.com"}}
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T07:00:00+00:00","id":"ieWgJG8kWRwL09n3","channel":"offline","product":{"id":"83955939","name":"CRAFTSMAN V60 3-in-1 Cordless Lawn Mower","price":402.79,"brand":"CRAFTSMAN","category":"Lawn Mowers"},"total":402.79,"store":"Texas","salesman":{"id":"24818438","name":"Wynne Briggs"},"customer":{"id":"HC9hhnDkI8e9RUo5","name":"Greg Navarro","age":79,"gender":"M","email":"greg.navarro@yahoo.com"}}
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T07:20:00+00:00","id":"DhaXEHMLraUP7rnw","channel":"online","product":{"id":"49769316","name":"CRAFTSMAN V20 Cordless Chainsaw","price":179.0,"brand":"CRAFTSMAN","category":"Chainsaws"},"total":179.0,"customer":{"id":"jxdnUc1WfUq3z2Qb","name":"Timothy Young","age":58,"gender":"M","email":"timothy.young@icloud.com"}}
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T07:40:00+00:00","id":"EzYzBSJdscSjOjch","channel":"offline","product":{"id":"33483362","name":"Maxcraft 60626 Stubby Claw Hammer","price":9.99,"brand":"Maxcraft","category":"Hammers"},"total":9.99,"store":"Copenhagen","salesman":{"id":"82978542","name":"Raynor Dennis"},"customer":{"id":"uvXNPlVvmZ9dzSJf","name":"Jesse Knight","age":68,"gender":"M","email":"jesse.knight@outlook.com"}}
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T08:00:00+00:00","id":"OIkUYV8L0km84baE","channel":"online","product":{"id":"44805907","name":"Stanley 194749 Waterproof Toolbox","price":29.99,"brand":"Stanley","category":"Toolboxes"},"total":29.99,"customer":{"id":"X425mLjT8qBB9HJY","name":"Jacqueline Daniel","age":64,"gender":"F","email":"jacqueline.daniel@icloud.com"}}
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T08:12:00+00:00","id":"nkeTII7GYjPwKafl","channel":"online","product":{"id":"71811888","name":"CRAFTSMAN M260 Lawn Mower","price":349.0,"brand":"CRAFTSMAN","category":"Lawn Mowers"},"total":349.0,"customer":{"id":"fzjqOkaW7kaTQFbj","name":"Gavin Graham","age":41,"gender":"M","email":"gavin.graham@yahoo.com"}}
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T08:24:00+00:00","id":"enJR3SIrVmR25h3m","channel":"online","product":{"id":"50628245","name":"Fischer Dubel SX 100 pcs","price":5.99,"brand":"Fischer","category":"Rawl Plugs"},"total":4.79,"discount":1.2,"customer":{"id":"2GmDIvJGoRhVbCwq","name":"Brandon Ryan","age":51,"gender":"M","email":"brandon.ryan@outlook.com"}}
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T08:36:00+00:00","id":"UhzYUjL8caBK7hbp","channel":"offline","product":{"id":"20326887","name":"John Deere X580 Lawn Tractor","price":7699.0,"brand":"John Deere","category":"Lawn Tractors"},"total":7699.0,"store":"Rotterdam","salesman":{"id":"12481772","name":"Flynn Dome"},"customer":{"id":"chCwEQXNm31pjOSt","name":"Jessica Long","age":27,"gender":"F","email":"jessica.long@outlook.com"}}
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T08:48:00+00:00","id":"xj3Qzjl0vQ8FfApG","channel":"offline","product":{"id":"50628245","name":"Fischer Dubel SX 100 pcs","price":5.99,"brand":"Fischer","category":"Rawl Plugs"},"total":5.99,"store":"Milano","salesman":{"id":"24818438","name":"Wynne Briggs"},"customer":{"id":"t6cyuosxdNcTjUg3","name":"Miss Veronica Gray MD","age":51,"gender":"F","email":"miss.veronica.gray.md@icloud.com"}}
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T09:00:00+00:00","id":"0g3v4nmisP0J14Yg","channel":"online","product":{"id":"49769316","name":"CRAFTSMAN V20 Cordless Chainsaw","price":179.0,"brand":"CRAFTSMAN","category":"Chainsaws"},"total":179.0,"customer":{"id":"NoOutrZ5Wm31fd6w","name":"Timothy Thomas","age":69,"gender":"M","email":"timothy.thomas@icloud.com"}}
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T09:12:00+00:00","id":"PR5xk3Qm8SDrCIN5","channel":"offline","product":{"id":"71811888","name":"CRAFTSMAN M260 Lawn Mower","price":349.0,"brand":"CRAFTSMAN","category":"Lawn Mowers"},"total":349.0,"store":"Texas","salesman":{"id":"30371694","name":"Mirilla Penkman"},"customer":{"id":"6sLKGjjDPz3NO5vi","name":"Billy Fuentes","age":45,"gender":"M","email":"billy.fuentes@yahoo.com"}}
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T09:24:00+00:00","id":"Ysi48zJ96LyQLBDM","channel":"online","product":{"id":"20326887","name":"John Deere X580 Lawn Tractor","price":7699.0,"brand":"John Deere","category":"Lawn Tractors"},"total":7699.0,"customer":{"id":"J72ePz5UwJNQQKKS","name":"Margaret Elliott","age":69,"gender":"F","email":"margaret.elliott@icloud.com"}}
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T09:36:00+00:00","id":"BXcLCNHNFcupwWCJ","channel":"online","product":{"id":"83955939","name":"CRAFTSMAN V60 3-in-1 Cordless Lawn Mower","price":402.79,"brand":"CRAFTSMAN","category":"Lawn Mowers"},"total":402.79,"customer":{"id":"ea60bWNhuMFoVtbe","name":"Tracy Kemp","age":45,"gender":"M","email":"tracy.kemp@outlook.com"}}
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T09:48:00+00:00","id":"7FXQbAOB06ZWzMDb","channel":"offline","product":{"id":"71811888","name":"CRAFTSMAN M260 Lawn Mower","price":349.0,"brand":"CRAFTSMAN","category":"Lawn Mowers"},"total":349.0,"store":"Denver","salesman":{"id":"58892354","name":"Ashely Rawnsley"},"customer":{"id":"sPBsm3uCAR6LKa1z","name":"Joseph Henderson","age":60,"gender":"M","email":"joseph.henderson@outlook.com"}}
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T10:00:00+00:00","id":"nhkepnL8fosMSpnL","channel":"online","product":{"id":"36919973","name":"BLACK + DECKER Direct Plug Cordless Screwdriver","price":20.99,"brand":"BLACK + DECKER","category":"Screwdrivers"},"total":19.1,"discount":1.89,"customer":{"id":"ZE6ZAtvleIGEY6wm","name":"Cody Burke","age":61,"gender":"M","email":"cody.burke@icloud.com"}}
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T10:12:00+00:00","id":"xWR4fYqv2bUNuA7f","channel":"online","product":{"id":"35467070","name":"Bad Boy MZ Magnum Lawn Tractor","price":3399.0,"brand":"Bad Boy","category":"Lawn Tractors"},"total":3399.0,"customer":{"id":"4dfwIniZks9Ub7do","name":"Christian Barron","age":67,"gender":"M","email":"christian.barron@outlook.com"}}
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T10:24:00+00:00","id":"LuR2EbOrrR3Pfgal","channel":"online","product":{"id":"71811888","name":"CRAFTSMAN M260 Lawn Mower","price":349.0,"brand":"CRAFTSMAN","category":"Lawn Mowers"},"total":349.0,"customer":{"id":"vF2qKDfmXfmZZEuc","name":"Gregory Lopez","age":69,"gender":"M","email":"gregory.lopez@gmail.com"}}
+{"index":{"_index":"orders"}}
+{"@timestamp":"2020-01-01T10:36:00+00:00","id":"yodqzoo88I2aRCVB","channel":"offline","product":{"id":"20326887","name":"John Deere X580 Lawn Tractor","price":7699.0,"brand":"John Deere","category":"Lawn Tractors"},"total":7699.0,"store":"Rotterdam","salesman":{"id":"12481772","name":"Flynn Dome"},"customer":{"id":"bTQXQtz7mkwDLA5r","name":"Luke Scott","age":31,"gender":"M","email":"luke.scott@icloud.com"}}
+{"index":{"_index":"orders"}}
